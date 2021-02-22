@@ -10,11 +10,8 @@
 
 - 🔭 I’m currently working on improving my skills as a Full Stack Web Developer.
 - 🌱 I’m always trying to pull the best of my self! 😃
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
 - 💬 Ask me about anything. I might be able to help you!
 - 📫 How to reach me: patosala998@gmail.com
-- 😄 Pronouns: ...
 - ⚡ Fun fact: I love horses 🐴🐎 and playing the guitar 🎸🎵
 
 ### Languages and Tools:
