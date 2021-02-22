@@ -25,14 +25,8 @@
 	<a href="https://www.mysql.com/"> 
 		<img title="MySQL" alt="MySQL" src="https://raw.githubusercontent.com/Thomas-George-T/Thomas-George-T/master/assets/mysql.svg" width="40" height="40" />
 	</a>
-	<a href="https://en.wikipedia.org/wiki/Scrum_(software_development)"> 
-		<img title="Scrum" alt="Scrum" src="https://3.bp.blogspot.com/-Plcz3gK2JYE/V2Ff_DYiz6I/AAAAAAAABoU/J4s2dDBVjW8HbZ70tlVPeLdQsJ1NzyM4ACLcB/s1600/agile-icon.png" width="40" height="40" />
-	</a>
 	<a href="https://code.visualstudio.com/"> 
 		<img title="Visual Studio Code" alt="Visual Studio Code" src="https://github.com/hussainweb/hussainweb/raw/main/icons/vscode.png" width="40" height="40" />
-	</a>
-	<a href="https://www.python.org/"> 
-		<img title="Python" alt="Python" src="https://raw.githubusercontent.com/Thomas-George-T/Thomas-George-T/master/assets/python.svg" width="40" height="40" />
 	</a>
 	<a href="https://git-scm.com/"> 
 		<img title="Git" alt="Git" src="https://github.com/hussainweb/hussainweb/raw/main/icons/git.png" width="40" height="40" />	
@@ -40,6 +34,9 @@
 	<a href="https://www.postman.com/">
 		<img title="Postman" alt="Postman" src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667" width="40" height="40" />
 	</a>  	
+	<a href="">
+		<img alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />	
+	</a>
 
 ---
 
