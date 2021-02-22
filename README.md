@@ -28,5 +28,5 @@
 ## Contact Me 📩📫
 
 - [Email]
-- <img align="left" alt="https://www.instagram.com/pato.sala/" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
+- <img align="left" href="https://www.instagram.com/pato.sala/" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
 
