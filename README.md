@@ -20,7 +20,10 @@
 		<img title="NodeJS" alt="NodeJS" src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png" width="40" height="40" />
 	</a>
 	<a href="https://reactjs.org/"> 
-		<img title="ReactJS" alt="ReactJS" src="https://github.com/hussainweb/hussainweb/raw/main/icons/react.png" width="40" height="40" />
+		<img title="Html" alt="Html" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" width="40" height="40" />
+	</a>
+	<a href="https://reactjs.org/"> 
+		<img title="CSS" alt="CSS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" width="40" height="40" />
 	</a>
 	<a href="https://www.mysql.com/"> 
 		<img title="MySQL" alt="MySQL" src="https://raw.githubusercontent.com/Thomas-George-T/Thomas-George-T/master/assets/mysql.svg" width="40" height="40" />
