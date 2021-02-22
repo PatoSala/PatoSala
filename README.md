@@ -1,4 +1,4 @@
-### Hi, I'm Pato 👋 and I am a potential <p style="color:red;">Web Developer</p> :D
+### Hi, I'm Pato 👋 and I am a potential <p>Web Developer :D</p> 
 
         --- { "Hello World!" } ---
 
