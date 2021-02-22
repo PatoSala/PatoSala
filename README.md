@@ -3,7 +3,7 @@
 ## I'm a student, still a begginer, but experience will take me higher!!! 🚀
 
 <a href="#">
-	<img align="right" alt="My GitHub Stats" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" width="330px" height="330px" />
+	<img align="right" alt="My GitHub Stats" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" width="350px" height="330px" />
 </a>
 
 - 🔭 I’m currently working on ...
