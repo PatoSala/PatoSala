@@ -29,7 +29,7 @@
 		<img title="MySQL" alt="MySQL" src="https://raw.githubusercontent.com/Thomas-George-T/Thomas-George-T/master/assets/mysql.svg" width="40" height="40" />
 	</a>
 	<a href="https://code.visualstudio.com/"> 
-		<img title="Visual Studio Code" alt="Visual Studio Code" src="https://github.com/hussainweb/hussainweb/raw/main/icons/vscode.png" width="40" height="40" />
+		<img title="Visual Studio Code" alt="Visual Studio Code" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" width="40" height="40" />
 	</a>
 	<a href="https://git-scm.com/"> 
 		<img title="Git" alt="Git" src="https://github.com/hussainweb/hussainweb/raw/main/icons/git.png" width="40" height="40" />	
