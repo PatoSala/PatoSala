@@ -48,7 +48,7 @@
 
 ## Contact Me 📩📫
 
-<a href="patosala998@gmail.com">
+<a href="mailto:patosala998@gmail.com?subject=Web%20Developer">
 	<img align="left" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/gmail.svg" />
 </a>
 <a href="https://www.instagram.com/pato.sala/">
