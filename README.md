@@ -9,7 +9,7 @@
 </a>
 
 - 🔭 I’m currently working on improving my skills as a Full Stack Web Developer.
-- 🌱 I’m always trying to pull the best of my self! 😃
+- 🌱 I’m always trying to pull the best out of my self! 😃
 -
 -
 - 💬 Ask me about anything. I might be able to help you!
