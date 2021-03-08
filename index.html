@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+  
+  nav {
+    padding: .8rem 1rem;
+    background-color: #d4fafa;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #logo {
+    font-size: 20px;
+    margin: 0px 16px 0px 0px;
+    padding: 5px 0px;
+  }
+  
+  .nav-links {
+    font-size: 16px;
+    font-style: none;
+    text-decoration: none;
+    color: #00000080;
+    margin: 0px;
+    padding: 8px;
+  }
+  
+  .nav-links:hover {
+    color: #000000b0
+  }
+  
+  .arrow {
+    border: solid #00000080;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .arrow:hover {
+    color: #000000b0;
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  nav form {
+    position: absolute;
+    right: 0;
+    padding: 0px 16px;
+  }
+  
+  .search-bar {
+    width: 203.6px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    margin: 0px 8px 0px 0px;
+    padding: 6px 12px;
+  }
+  
+  .search-button {
+    width: 73.3px;
+    height: 38px;
+    background-color: transparent;
+    color: #28a745;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-color: #28a745;
+  }
+  
+  .search-button:hover {
+    color: white;
+    background-color: #28a745;
+    transition: 0.2s;
+  }
+  
+  .burger {
+    display: none;
+    width: 56px;
+    height: 40px;
+    border-radius: .25rem;
+    border: 1px solid #bdbdbd;
+    background: transparent;
+    margin: 0px 16px 0px 0px;
+    position: absolute;
+    right: 0;
+    padding: 0px 16px;
+  }
 
+  .burger i {
+    color: #949494;
+  }
+  
+  @media screen and (max-width: 576px) {
+    nav {
+      flex-direction: column;
+      align-items: unset;
+      padding: .5rem 1rem;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px 0px 0px;
+    }
+
+    nav .burger {
+      display: block;
+      position: absolute;
+    }
+    
+    nav form {
+      display: none;
+    }
+
+    .menu-links {
+      margin: 10px 0px 0px 0px;
+    }
+  
+    nav .nav-links {
+      display: none;
+    }
+
+  }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/471bdc5e2e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            let count = 0;
+    
+            $(".burger").on("click", function() {
+            if (count == 0) {
+                $(".nav-links").css("display", "block");
+                count = 1;
+            } else {
+                $(".nav-links").css("display", "none");
+                count = 0;
+            }
+        });
+    });
+    </script>
+    <title>Hi! I'm Pato</title>
+</head>
+<body>
+    <nav>
+      
+        <div class="main">
+          <p id="logo">Navbar</p>
+  
+          <button class="burger"><i class="fas fa-bars"></i></button>
+        </div>
+  
+        <div class="menu-links">
+          <a class="nav-links" href="">Log In</a>
+          <a class="nav-links" href="">Products</a>
+          <a class="nav-links" href="">Help</a>
+          <a class="nav-links" href="">Dropdown <i class="arrow down"></i></a>
+        </div>
+  
+        <form action="" method="GET">
+          <label for="search-bar">
+          <input type="search" name="search-bar" class="search-bar" placeholder="Search">
+          </label>
+          <button type="submit" class="search-button">Search</button>
+        </form>
+  
+      </nav>
+</body>
+</html>
