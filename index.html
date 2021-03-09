@@ -17,6 +17,7 @@
       margin: 0px;
       padding: 0px;
       background-image: url("https://cdn.wallpapersafari.com/91/81/1bWD6s.png");
+      overflow-y: scroll;
     }
 
     nav {
@@ -25,12 +26,15 @@
       font-size: 16px;
       font-weight: 600;
       width: 100%;
+      z-index: 10;
+      position: fixed;
+      top: 0;
     }
 
     .nav-links {
       position: absolute;
       right: 0;
-      padding: 4px 16px;
+      padding: 25px 45px;
     }
 
     .nav-links a {
@@ -40,7 +44,7 @@
     }
 
     .nav-links a:hover {
-      color: #ffffff;
+      color: #65fdaa;
       transition: 0.3s;
     }
 
@@ -48,13 +52,19 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      width: 1100px;
+      width: 900px;
       background-color: transparent;
       margin: 50px 0px 0px 0px;
     }
 
     .content {
       margin: 70px 0px 0px 0px;
+    }
+
+    .content p {
+      color: #c7c7c7;
+      font-size: 20px;
+      font-family: 'Roboto Mono', monospace;
     }
 
     .main-title {
@@ -95,6 +105,11 @@
       font-family: 'Roboto Mono', monospace;
     }
 
+    #contact h2 {
+      font-family: 'Spartan', sans-serif;
+      color: #c7c7c7;
+    }
+
     #contact label {
       font-family: 'Roboto Mono', monospace; 
       color: #c7c7c7;
@@ -104,6 +119,7 @@
     #contact form {
       display: flex;
       flex-direction: column;
+      align-items: center;
       flex-wrap: wrap;
       font-family: 'Roboto Mono', monospace;
     }
@@ -140,6 +156,11 @@
       border-color: transparent;
     }
 
+    #abMe-section h2{
+      font-family: 'Spartan', sans-serif;;
+      color: #c7c7c7;
+    }
+
   </style>
 </head>
 <body>
@@ -159,8 +180,28 @@
         <p id="title-third-line">{ Web Developer }</p>
       </div>
     </div>
+  
+    <div class="content">
+      <div id="abMe-section">
+        <h2>01. About Me<hr width="100%"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consectetur. Ipsum, dignissimos. Laudantium eligendi, consequatur praesentium quo architecto quos, deserunt dicta adipisci eveniet ipsum corporis provident natus quis. Sed, labore.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div id="abMe-section">
+        <h2>02. Work<hr width="100%"></h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident recusandae laboriosam a accusamus nihil! Esse quia architecto quo, saepe commodi est sequi id tempora illo, voluptatibus, cumque ratione unde nemo.</p>
+      </div>
+    </div>
+    <div class="content">
+      <div id="abMe-section">
+        <h2>03. Tools<hr width="100%"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsum fuga id corrupti sequi repellendus eum culpa accusantium temporibus? Velit sint dolor rerum ex adipisci. Ipsum aliquam nemo numquam voluptas.</p>
+      </div>
+    </div>
     <div class="content">
       <div id="contact">
+        <h2>04. Conect With Me<hr width="100%"></h2>
         <form action="https://formspree.io/f/xyybrzve" method="POST">
           <label>
             Your email:
