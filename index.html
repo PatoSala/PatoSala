@@ -1,184 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Hi! I'm Pato - Web Developer</title>
+  <style>
     body {
-        margin: 0px;
-        padding: 0px;
-    }
-  
-  nav {
-    padding: .8rem 1rem;
-    background-color: #d4fafa;
-    display: flex;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  #logo {
-    font-size: 20px;
-    margin: 0px 16px 0px 0px;
-    padding: 5px 0px;
-  }
-  
-  .nav-links {
-    font-size: 16px;
-    font-style: none;
-    text-decoration: none;
-    color: #00000080;
-    margin: 0px;
-    padding: 8px;
-  }
-  
-  .nav-links:hover {
-    color: #000000b0
-  }
-  
-  .arrow {
-    border: solid #00000080;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  
-  .arrow:hover {
-    color: #000000b0;
-  }
-  
-  .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  
-  nav form {
-    position: absolute;
-    right: 0;
-    padding: 0px 16px;
-  }
-  
-  .search-bar {
-    width: 203.6px;
-    height: 38px;
-    border-radius: 3px;
-    border: 1px solid #ced4da;
-    font-size: 16px;
-    margin: 0px 8px 0px 0px;
-    padding: 6px 12px;
-  }
-  
-  .search-button {
-    width: 73.3px;
-    height: 38px;
-    background-color: transparent;
-    color: #28a745;
-    font-size: 16px;
-    border-radius: 3px;
-    border: 1px solid transparent;
-    border-color: #28a745;
-  }
-  
-  .search-button:hover {
-    color: white;
-    background-color: #28a745;
-    transition: 0.2s;
-  }
-  
-  .burger {
-    display: none;
-    width: 56px;
-    height: 40px;
-    border-radius: .25rem;
-    border: 1px solid #bdbdbd;
-    background: transparent;
-    margin: 0px 16px 0px 0px;
-    position: absolute;
-    right: 0;
-    padding: 0px 16px;
-  }
-
-  .burger i {
-    color: #949494;
-  }
-  
-  @media screen and (max-width: 576px) {
-    nav {
-      flex-direction: column;
-      align-items: unset;
-      padding: .5rem 1rem;
-    }
-
-    .main {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      margin: 10px 0px 0px 0px;
+      margin: 0px;
+      padding: 0px;
+      background-image: url("https://cdn.wallpapersafari.com/91/81/1bWD6s.png");
     }
 
-    nav .burger {
-      display: block;
+    nav {
+      background-color: teal;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+    }
+
+    .nav-links {
       position: absolute;
-    }
-    
-    nav form {
-      display: none;
+      right: 0;
+      padding: 4px 16px;
     }
 
-    .menu-links {
-      margin: 10px 0px 0px 0px;
-    }
-  
-    nav .nav-links {
-      display: none;
+    .nav-links a {
+      color: #c7c7c7;
+      text-decoration: none;
+      background-color: transparent;
     }
 
-  }
-    </style>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/471bdc5e2e.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-            let count = 0;
-    
-            $(".burger").on("click", function() {
-            if (count == 0) {
-                $(".nav-links").css("display", "block");
-                count = 1;
-            } else {
-                $(".nav-links").css("display", "none");
-                count = 0;
-            }
-        });
-    });
-    </script>
-    <title>Hi! I'm Pato</title>
+    .nav-links a:hover {
+      color: #ffffff;
+      transition: 0.3s;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      width: 1100px;
+      background-color: transparent;
+      margin: 50px 0px 0px 0px;
+    }
+
+    .content {
+      margin: 70px 0px 0px 0px;
+    }
+
+    .main-title {
+      color: #c7c7c7;
+      font-family: 'Spartan', sans-serif;
+    }
+
+    .main-title p {
+      display: inline-block;
+      overflow: hidden;
+      background: linear-gradient(to right, #4242d1, #303068 50%, #c7c7c7 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+    }
+
+    .main-title p:hover {
+      background-position: 0 100%;
+    }
+
+    #title-first-line {
+      font-size: 41px;
+      margin: 0px 0px 0px 20px;
+      font-family: 'Roboto Mono', monospace; 
+    }
+
+    #title-second-line {
+      font-size: 50px;
+      margin: 0px 0px 0px 40px;
+    }
+
+    #title-third-line {
+      font-size: 44px;
+      margin: 0px;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    #contact label {
+      font-family: 'Roboto Mono', monospace; 
+      color: #c7c7c7;
+      display: inline;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    #contact input {
+      width: 400px;
+      height: 22px;
+      border: 1px solid orange;
+      border-radius: 7px;
+      margin: 5px 0px;
+    }
+
+    #contact textarea {
+      width: 400px;
+      height: 100px;
+      border: 1px solid orange;
+      border-radius: 7px;
+      margin: 5px 0px;
+    }
+
+    #contact button {
+      width: 406px;
+      height: 26px;
+      font-family: inherit;
+      background-color: transparent;
+      color: #1f9b1f;
+      border: 1px solid #1f9b1f;
+      border-radius: 7px;
+    }
+
+    #contact button:hover {
+      background-color: #1f9b1f;
+      color: #c7c7c7;
+      border-color: transparent;
+    }
+
+  </style>
 </head>
 <body>
-    <nav>
-      
-        <div class="main">
-          <p id="logo">Navbar</p>
-  
-          <button class="burger"><i class="fas fa-bars"></i></button>
-        </div>
-  
-        <div class="menu-links">
-          <a class="nav-links" href="">Log In</a>
-          <a class="nav-links" href="">Products</a>
-          <a class="nav-links" href="">Help</a>
-          <a class="nav-links" href="">Dropdown <i class="arrow down"></i></a>
-        </div>
-  
-        <form action="" method="GET">
-          <label for="search-bar">
-          <input type="search" name="search-bar" class="search-bar" placeholder="Search">
+  <nav>
+    <div class="nav-links">
+      <a href="">.about Me()</a>
+      <a href="">.work()</a>
+      <a href="">.tools()</a>
+      <a href="">.contact()</a>
+    </div>
+  </nav>
+  <main>
+    <div class="content">
+      <div class="main-title">
+        <p id="title-first-line">Hi!, I'm()</p><br>
+        <p id="title-second-line">Pato Sala,</p><br>
+        <p id="title-third-line">{ Web Developer }</p>
+      </div>
+    </div>
+    <div class="content">
+      <div id="contact">
+        <form action="https://formspree.io/f/xyybrzve" method="POST">
+          <label>
+            Your email:
+            <br>
+            <input type="email" name="_replyto">
           </label>
-          <button type="submit" class="search-button">Search</button>
-        </form>
+          <label>
+            Your message:
+            <br>
+            <textarea name="message"></textarea>
+          </label>
   
-      </nav>
+          <!-- your other form fields go here -->
+  
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
