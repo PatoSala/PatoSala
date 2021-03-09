@@ -5,16 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&family=Spartan:wght@700&display=swap" rel="stylesheet">
   <title>Hi! I'm Pato - Web Developer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    $("#aboutMe").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#abMe-section").offset().top},
-        'slow');
-});
+    window.addEventListener("load", function() {
+      $("#aboutMe").click(function() {
+          $('html,body').animate({
+          scrollTop: $("#abMe-section").offset().top - $('.nav-links').outerHeight()},
+          'slow');
+        });
+
+        $("#work").click(function() {
+          $('html,body').animate({
+          scrollTop: $("#work-section").offset().top},
+          'slow');
+        });
+
+        $("#tools").click(function() {
+          $('html,body').animate({
+          scrollTop: $("#tools-section").offset().top},
+          'slow');
+        });
+
+        $("#contact").click(function() {
+          $('html,body').animate({
+          scrollTop: $("#contact-section").offset().top - $('.nav-links').outerHeight()},
+          'slow');
+        });
+    })
   </script>
   <style>
     body {
@@ -24,7 +43,7 @@
       margin: 0px;
       padding: 0px;
       /*background-image: url("https://cdn.wallpapersafari.com/91/81/1bWD6s.png");*/
-      background-color: #0a0a3d;
+      background-color: #161638;
       overflow-y: scroll;
     }
 
@@ -39,7 +58,23 @@
       top: 0;
     }
 
+    .email-link {
+      position: absolute;
+      left: 0;
+      padding: 25px 45px ;
+    }
+
+    .email-link a {
+      cursor: pointer;
+      font-weight: 100;
+      color: #65fdaa;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
     .nav-links {
+      cursor: pointer;
+      font-weight: 100;
       position: absolute;
       right: 0;
       padding: 25px 45px;
@@ -60,19 +95,24 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-      width: 900px;
+      width: 70vw;
       background-color: transparent;
-      margin: 0px 0px 0px 0px;
+      margin: 30px 0px 0px 0px;
     }
 
     section {
-      margin: 100px 0px 0px 0px;
+      margin: 100px 0px 100px 0px;
     }
 
     section p {
-      color: #c7c7c7;
+      color: #8892b0;
       font-size: 20px;
       font-family: 'Roboto Mono', monospace;
+    }
+
+    section h2 {
+      color: #c7c7c7;
+      font-family: 'Spartan', sans-serif;;
     }
 
     hr {
@@ -84,13 +124,13 @@
     .main-title {
       color: #c7c7c7;
       font-family: 'Spartan', sans-serif;
-      margin: 100px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
     }
 
-    .main-title p {
+    .main-title p{
       display: inline-block;
       overflow: hidden;
-      background: linear-gradient(to right, #65fdaa, #303068 50%, #c7c7c7 50%);
+      background: linear-gradient(to right, #65fdaa, #2e2e86 50%, #8892b0 50%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -112,63 +152,49 @@
     #title-second-line {
       font-size: 50px;
       margin: 0px 0px 0px 40px;
+      overflow: hidden;
+      background: linear-gradient(to right, #65fdaa, #2e2e86 50%, #c7c7c7 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+    }
+
+    #title-second-line:hover {
+      background-position: 0 100%;
     }
 
     #title-third-line {
       font-size: 44px;
       margin: 0px;
       font-family: 'Roboto Mono', monospace;
+      color: #636161;
     }
 
-    #contact h2 {
-      font-family: 'Spartan', sans-serif;
-      color: #c7c7c7;
+    summary {
+      width: 600px;
+      margin: 50px 0px 0px 0px;
     }
 
-    #contact label {
-      font-family: 'Roboto Mono', monospace; 
-      color: #c7c7c7;
-      display: inline;
+    summary form {
+      margin: 70px 0px 0px 0px;
     }
 
-    #contact form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
+    summary button {
+      width: 161px;
+      height: 56px;
+      background-color: transparent;
+      color: #65fdaa;
+      border: 1px solid #65fdaa;
+      border-radius: 7px;
       font-family: 'Roboto Mono', monospace;
     }
 
-    #contact input {
-      width: 400px;
-      height: 22px;
-      border: 1px solid orange;
-      border-radius: 7px;
-      margin: 5px 0px;
-    }
-
-    #contact textarea {
-      width: 400px;
-      height: 100px;
-      border: 1px solid orange;
-      border-radius: 7px;
-      margin: 5px 0px;
-    }
-
-    #contact button {
-      width: 406px;
-      height: 26px;
-      font-family: inherit;
-      background-color: transparent;
-      color: #1f9b1f;
-      border: 1px solid #1f9b1f;
-      border-radius: 7px;
-    }
-
-    #contact button:hover {
-      background-color: #1f9b1f;
-      color: #c7c7c7;
-      border-color: transparent;
+    summary button:hover {
+      transition: 0.6s;
+      background-color: #65fda949;
     }
 
     #abMe-section h2{
@@ -185,11 +211,14 @@
 </head>
 <body>
   <nav>
+    <div class="email-link">
+      <a href="mailto:patosala998@gmail.com?subject=Portfolio%20Web%20Developer">patosala998@gmail.com</a>
+    </div>
     <div class="nav-links">
-      <a href="" id="aboutMe">.about Me()</a>
-      <a href="">.work()</a>
-      <a href="">.tools()</a>
-      <a href="">.contact()</a>
+      <a id="aboutMe">.about Me()</a>
+      <a id="work">.work()</a>
+      <a id="tools">.tools()</a>
+      <a id="contact">.contact()</a>
     </div>
   </nav>
   <main>
@@ -199,6 +228,13 @@
         <p id="title-second-line">Pato Sala,</p><br>
         <p id="title-third-line">{ Web Developer }</p>
       </div>
+      <summary>
+        <p>Hello there! I'm Pato, and I'm a Full-Stack Web Developer.<br>
+           All of my projects are done with NodeJS.</p> 
+           <form action="mailto:patosala998@gmail.com?subject=Portfolio%20Web%20Developer" method="GET">
+            <button type="submit">Say Hello</button>
+          </form>
+      </summary>
     </section>
     <section>
       <div id="abMe-section">
@@ -207,20 +243,20 @@
       </div>
     </section>
     <section>
-      <div id="abMe-section">
+      <div id="work-section">
         <h2><p class="number">02.</p> &ltWork/&gt<hr width="100%"></h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident recusandae laboriosam a accusamus nihil! Esse quia architecto quo, saepe commodi est sequi id tempora illo, voluptatibus, cumque ratione unde nemo.</p>
       </div>
     </section>
     <section>
-      <div id="abMe-section">
+      <div id="tools-section">
         <h2><p class="number">03.</p> &ltTools/&gt<hr width="100%"></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsum fuga id corrupti sequi repellendus eum culpa accusantium temporibus? Velit sint dolor rerum ex adipisci. Ipsum aliquam nemo numquam voluptas.</p>
       </div>
     </section>
     <section>
-      <div id="abMe-section">
-        <h2><p class="number">04.</p> &ltConect With Me/&gt<hr width="100%"></h2>
+      <div id="contact-section">
+        <h2><p class="number">04.</p> &ltConnect With Me/&gt<hr width="100%"></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero harum dolor porro similique odit sit totam a consequuntur. Ratione nesciunt quasi unde nemo neque obcaecati placeat iure in aliquid sit!</p>
     </section>
       </div>
