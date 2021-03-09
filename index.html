@@ -9,6 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&family=Spartan:wght@700&display=swap" rel="stylesheet">
   <title>Hi! I'm Pato - Web Developer</title>
+  <script>
+    $("#aboutMe").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#abMe-section").offset().top},
+        'slow');
+});
+  </script>
   <style>
     body {
       display: flex;
@@ -16,7 +23,8 @@
       align-items: center;
       margin: 0px;
       padding: 0px;
-      background-image: url("https://cdn.wallpapersafari.com/91/81/1bWD6s.png");
+      /*background-image: url("https://cdn.wallpapersafari.com/91/81/1bWD6s.png");*/
+      background-color: #0a0a3d;
       overflow-y: scroll;
     }
 
@@ -54,29 +62,35 @@
       padding: 0;
       width: 900px;
       background-color: transparent;
-      margin: 50px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
     }
 
-    .content {
-      margin: 70px 0px 0px 0px;
-      transition: 2s;
+    section {
+      margin: 100px 0px 0px 0px;
     }
 
-    .content p {
+    section p {
       color: #c7c7c7;
       font-size: 20px;
       font-family: 'Roboto Mono', monospace;
     }
 
+    hr {
+      height: 1px;
+      background-color: #65fdaa;
+      border: 0px solid;
+    }
+
     .main-title {
       color: #c7c7c7;
       font-family: 'Spartan', sans-serif;
+      margin: 100px 0px 0px 0px;
     }
 
     .main-title p {
       display: inline-block;
       overflow: hidden;
-      background: linear-gradient(to right, #4242d1, #303068 50%, #c7c7c7 50%);
+      background: linear-gradient(to right, #65fdaa, #303068 50%, #c7c7c7 50%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -158,8 +172,13 @@
     }
 
     #abMe-section h2{
-      font-family: 'Spartan', sans-serif;;
+      font-family: 'Spartan', sans-serif;
       color: #c7c7c7;
+    }
+
+    .number {
+      color: #65fdaa;
+      display: inline;
     }
 
   </style>
@@ -167,60 +186,44 @@
 <body>
   <nav>
     <div class="nav-links">
-      <a href="">.about Me()</a>
+      <a href="" id="aboutMe">.about Me()</a>
       <a href="">.work()</a>
       <a href="">.tools()</a>
       <a href="">.contact()</a>
     </div>
   </nav>
   <main>
-    <div class="content">
+    <section>
       <div class="main-title">
         <p id="title-first-line">Hi!, I'm()</p><br>
         <p id="title-second-line">Pato Sala,</p><br>
         <p id="title-third-line">{ Web Developer }</p>
       </div>
-    </div>
-  
-    <div class="content">
+    </section>
+    <section>
       <div id="abMe-section">
-        <h2>01. About Me<hr width="100%"></h2>
+        <h2><p class="number">01.</p> &ltAbout Me/&gt<hr width="100%"></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consectetur. Ipsum, dignissimos. Laudantium eligendi, consequatur praesentium quo architecto quos, deserunt dicta adipisci eveniet ipsum corporis provident natus quis. Sed, labore.</p>
       </div>
-    </div>
-    <div class="content">
+    </section>
+    <section>
       <div id="abMe-section">
-        <h2>02. Work<hr width="100%"></h2>
+        <h2><p class="number">02.</p> &ltWork/&gt<hr width="100%"></h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident recusandae laboriosam a accusamus nihil! Esse quia architecto quo, saepe commodi est sequi id tempora illo, voluptatibus, cumque ratione unde nemo.</p>
       </div>
-    </div>
-    <div class="content">
+    </section>
+    <section>
       <div id="abMe-section">
-        <h2>03. Tools<hr width="100%"></h2>
+        <h2><p class="number">03.</p> &ltTools/&gt<hr width="100%"></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsum fuga id corrupti sequi repellendus eum culpa accusantium temporibus? Velit sint dolor rerum ex adipisci. Ipsum aliquam nemo numquam voluptas.</p>
       </div>
-    </div>
-    <div class="content">
-      <div id="contact">
-        <h2>04. Conect With Me<hr width="100%"></h2>
-        <form action="https://formspree.io/f/xyybrzve" method="POST">
-          <label>
-            Your email:
-            <br>
-            <input type="email" name="_replyto">
-          </label>
-          <label>
-            Your message:
-            <br>
-            <textarea name="message"></textarea>
-          </label>
-  
-          <!-- your other form fields go here -->
-  
-          <button type="submit">Send</button>
-        </form>
+    </section>
+    <section>
+      <div id="abMe-section">
+        <h2><p class="number">04.</p> &ltConect With Me/&gt<hr width="100%"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero harum dolor porro similique odit sit totam a consequuntur. Ratione nesciunt quasi unde nemo neque obcaecati placeat iure in aliquid sit!</p>
+    </section>
       </div>
-    </div>
   </main>
 </body>
 </html>
