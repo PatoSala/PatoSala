@@ -12,19 +12,19 @@
     window.addEventListener("load", function() {
       $("#aboutMe").click(function() {
           $('html,body').animate({
-          scrollTop: $("#abMe-section").offset().top - $('.nav-links').outerHeight()},
+          scrollTop: $("#abMe-section").offset().top - 200},
           'slow');
         });
 
         $("#work").click(function() {
           $('html,body').animate({
-          scrollTop: $("#work-section").offset().top},
+          scrollTop: $("#work-section").offset().top - 200},
           'slow');
         });
 
         $("#tools").click(function() {
           $('html,body').animate({
-          scrollTop: $("#tools-section").offset().top},
+          scrollTop: $("#tools-section").offset().top - 200},
           'slow');
         });
 
@@ -45,23 +45,26 @@
       /*background-image: url("https://cdn.wallpapersafari.com/91/81/1bWD6s.png");*/
       background-color: #161638;
       overflow-y: scroll;
+      width: 100%;
     }
 
     nav {
-      background-color: teal;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 44px;
+      position: fixed;
+      z-index: 10;
       font-family: 'Roboto Mono', monospace;
       font-size: 16px;
       font-weight: 600;
-      width: 100%;
-      z-index: 10;
-      position: fixed;
-      top: 0;
     }
 
     .email-link {
       position: absolute;
       left: 0;
-      padding: 25px 45px ;
+      margin: 0px 0px 0px 50px;
     }
 
     .email-link a {
@@ -69,15 +72,12 @@
       font-weight: 100;
       color: #65fdaa;
       text-decoration: none;
-      background-color: transparent;
     }
 
     .nav-links {
-      cursor: pointer;
-      font-weight: 100;
       position: absolute;
       right: 0;
-      padding: 25px 45px;
+      margin: 0px 50px 0px 0px;
     }
 
     .nav-links a {
@@ -174,7 +174,7 @@
     }
 
     summary {
-      width: 600px;
+      width: 50vw;
       margin: 50px 0px 0px 0px;
     }
 
