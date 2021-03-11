@@ -237,10 +237,6 @@
       margin: 0px 0px 0px 0px;
     }
 
-    .burgerContainer {
-      display: none;
-    }
-
     .burger {
       position: absolute;
       right: 0;
@@ -296,10 +292,36 @@
       transform: rotate(-45deg) translate(35px, 35px);
     }
 
+    .mobile-email-link {
+      display: none;
+      margin: 0px 0px 0px 10px;
+    }
+
+    .mobile-email-link a {
+      cursor: pointer;
+      font-weight: 100;
+      color: #65fdaa;
+      text-decoration: none;
+      font-size: xx-large;
+    }
+
     @media (max-width: 768px) {
+
+      main {
+        width: 87%;
+      }
+
       .burger {
         display: flex;
-        margin: 0px 50px 0px 0px;
+        margin: 0px 10px 0px 0px;
+      }
+
+      .email-link {
+        display: none;
+      }
+
+      .mobile-email-link {
+        display: block;
       }
 
       .nav-links {
@@ -327,6 +349,9 @@
 </head>
 <body>
   <nav>
+    <div class="mobile-email-link">
+      <a href="mailto:patosala998@gmail.com?subject=Portfolio%20Web%20Developer">PS</a>
+    </div>
     <div class="email-link">
       <a href="mailto:patosala998@gmail.com?subject=Portfolio%20Web%20Developer">patosala998@gmail.com</a>
     </div>
