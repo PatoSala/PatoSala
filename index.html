@@ -10,6 +10,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     window.addEventListener("load", function() {
+
+      let burger = document.querySelector('.burger');
+      let navLinks = document.querySelector('.nav-links');
+      let menuOpen = false;
+
+      burger.addEventListener('click', function() {
+        if (!menuOpen) {
+          burger.classList.add('open');
+          navLinks.classList.add('open');
+          menuOpen = true;
+        } else {
+          burger.classList.remove('open');
+          navLinks.classList.remove('open');
+          menuOpen = false;
+        }
+      })
+
+
       $("#aboutMe").click(function() {
           $('html,body').animate({
           scrollTop: $("#abMe-section").offset().top - 200},
@@ -219,6 +237,92 @@
       margin: 0px 0px 0px 0px;
     }
 
+    .burgerContainer {
+      display: none;
+    }
+
+    .burger {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      width: 50px;
+      height: 54px;
+      background-color: none;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s ease-in-out;
+      z-index: 12;
+    }
+
+    .burger .level {
+      background-color: #65fdaa;
+      width: 40px;
+      height: 3px;
+      border-radius: 5px;
+      transition: all .5s ease-in-out;
+    }
+
+    .burger .level::before,
+    .burger .level::after {
+      content: '';
+      position: absolute;
+      background-color: #65fdaa;
+      width: 40px;
+      height: 3px;
+      border-radius: 5px;
+      transition: all .5s ease-in-out;
+    }
+
+    .burger .level::before {
+      transform: translateY(-10px);
+    }
+
+    .burger .level::after {
+      transform: translateY(10px);
+    }
+
+    .burger.open .level {
+      transform: translateX(-50px);
+      background: transparent;
+
+    } 
+
+    .burger.open .level::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .burger.open .level::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    @media (max-width: 768px) {
+      .burger {
+        display: flex;
+        margin: 0px 50px 0px 0px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links.open {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 11;
+        background: #0e0e3b;
+        top: 0;
+        width: min(75vw, 400px);
+        height: 100vh;
+        box-shadow: -10px 0px 30px -15px;  
+        
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -226,6 +330,9 @@
     <div class="email-link">
       <a href="mailto:patosala998@gmail.com?subject=Portfolio%20Web%20Developer">patosala998@gmail.com</a>
     </div>
+    <div class="burger">
+      <div class="level"></div>
+   </div>
     <div class="nav-links">
       <a id="aboutMe">.about Me()</a>
       <a id="work">.work()</a>
