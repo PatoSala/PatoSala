@@ -56,4 +56,7 @@
 <a href="https://www.instagram.com/pato.sala/">
 	<img align="left" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
 </a>
+<a href="https://www.linkedin.com/in/patricio-sala-1025a1190/?locale=en_US">
+	<img align="left" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+</a>
 
