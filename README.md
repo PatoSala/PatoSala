@@ -10,7 +10,7 @@
 
 - 🔭 I’m currently working on improving my skills as a Full Stack Web Developer.
 - 🌱 I’m always trying to pull the best out of my self! 😃
--
+-  Check out this Hackintosh Discord server! https://discord.gg/EQ7eHBMp
 - 💬 Ask me about anything. I might be able to help you!
 - Check out my portfolio! https://patosala.github.io/PatoSala/ 
 - 📫 How to reach me: patosala998@gmail.com
